@@ -27,7 +27,6 @@
   <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
 
   <style type="text/css">
-
     .hidden.menu {
       display: none;
     }
@@ -153,12 +152,12 @@
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="active item">Krewdar</a>
-    <a class="item">About</a>
-    <a class="item">FAQ</a>
+    <a class="item" href="#mainpage">Krewdar</a>
+    <a class="item" href="#aboutsection">About</a>
+    <a class="item" href="#faqsection">FAQ</a>
     <div class="right menu">
       <div class="item">
-        <a class="ui button" href="projects.html">Join the Beta</a>
+        <a class="ui button" href="#betasection">Join the Beta</a>
       </div>
     </div>
   </div>
@@ -166,10 +165,10 @@
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
-  <a class="active item">Krewdar</a>
-  <a class="item">About</a>
-  <a class="item">FAQ</a>
-  <a class="item" href="projects.html">Join the Beta</a>
+  <a class="item" href="#mainpage">Krewdar</a>
+  <a class="item" href="#aboutsection">About</a>
+  <a class="item" href="#faqsection">FAQ</a>
+  <a class="item" href="#betasection">Join the Beta</a>
 </div>
 
 
@@ -182,21 +181,21 @@
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="active item">Krewdar</a>
-        <a class="item">About</a>
-        <a class="item">FAQ</a>
+        <a class="item" href="#mainpage">Krewdar</a>
+        <a class="item" href="#aboutsection">About</a>
+        <a class="item" href="#faqsection">FAQ</a>
         <div class="right item">
-          <a class="ui inverted button">Join the Beta</a>
+          <a class="ui inverted button" href="#faqsection">Join the Beta</a>
         </div>
       </div>
     </div>
 
-    <div class="ui text container">
+    <div class="ui text container" id="mainpage">
       <h1 class="ui inverted header">
         <b>KREW</b>DAR
       </h1>
       <h2>No service? No problem. Meetup with friends at <i>any</i> crowded event, in just 3 easy steps!</h2>
-      <div class="ui huge primary button">Learn more<i class="right arrow icon"></i></div>
+      <div class="ui huge primary button"><a href="#aboutsection"><font color="#ffffff">Learn more</font></a><i class="right arrow icon"></i></div>
     </div>
 
   </div>
@@ -204,7 +203,7 @@
   <div class="ui vertical stripe segment">
     <div class="ui text container">
 
-      <div class="ui horizontal divider">
+      <div class="ui horizontal divider" id="aboutsection">
         Step one
       </div>
       <div class="ui two column doubling stackable grid container">
@@ -243,7 +242,7 @@
         </div>
       </div>
 
-      <div class="ui horizontal divider">
+      <div class="ui horizontal divider" id="betasection">
         Ready?
       </div>
       <div class="ui center aligned container">
@@ -252,8 +251,8 @@
         </a>
       </div>
 
-      <div class="ui horizontal divider">
-        FAQ
+      <div class="ui horizontal divider" id="faqsection">			
+        	FAQ
       </div>
 
     </div>
