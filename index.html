@@ -27,6 +27,15 @@
   <link rel="stylesheet" type="text/css" href="dist/components/transition.css">
 
   <style type="text/css">
+	.inputForm {
+	border-radius:0px;
+	border-style: solid;
+	border-color: #E0E1E2;
+	border-width: 0.5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	}
+	  
     .hidden.menu {
       display: none;
     }
@@ -246,12 +255,10 @@
         Ready?
       </div>
       <div class="ui center aligned container">
-		<form class="ui form" method="POST" action="http://formspree.io/krewdar@gmail.com">
-			<div class="field">
-	  			<input type="email" name="email" placeholder="Your email">
-	  			<button type="submit" class="ui button" style="margin: 5px; padding: 6px">Join!</button>
-			</div>
-		</form>
+	<form class="ui form" method="POST" action="http://formspree.io/krewdar@gmail.com">
+		<input type="email" name="email" placeholder="Your email" class="inputForm" style="padding: 2px">
+		<button type="submit" class="ui button" style="margin: 5px; padding: 6px">Join!</button>
+	</form>
       </div>
 
       <div class="ui horizontal divider" id="faqsection">			
