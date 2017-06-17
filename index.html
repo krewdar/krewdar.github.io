@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <link rel="image_src" type="image/png" href="assets/images/logo.png" />
+  <link rel="icon" href="krewdar.png" />
 
   <!-- Site Properties -->
   <title>Krewdar</title>
@@ -201,32 +201,37 @@
       </div>
     </div>
 
+    <!-- Start of Landing section -->
     <div class="ui text container">
       <h1 class="ui inverted header">
         <b>KREW</b>DAR
       </h1>
-      <h2>No service? No problem. Meetup with friends at <i>any</i> crowded event, in just 3 easy steps!</h2>
+      <h2>No service? No problem. Meet up with friends at <i>any</i> crowded event, in just 3 easy steps!</h2>
       <div class="ui huge primary button"><a href="#aboutsection"><font color="#ffffff">Learn more</font></a><i class="right arrow icon"></i></div>
     </div>
 
   </div>
 
+  <!-- Start of About section -->
   <div class="ui vertical stripe segment" id="aboutsection">
     <div class="ui text container">
 
+      <!-- Start of Step 1 section -->
       <div class="ui horizontal divider">
         Step one
       </div>
       <div class="ui two column doubling stackable grid container">
         <div class="middle aligned column">
           <h3 class="ui header">Create an Event</h3>
-          <p>Add the event name, start time, and duration. Only one person needs to create the Event, everyone else just needs to scan the KrewCode!</p>
+          <p>Add the event name, start time, and duration. Only one person needs to create the Event,
+            everyone else just needs to scan the KrewCode with the <i class="plus icon"></i> icon!</p>
         </div>
         <div class="middle aligned column">
           <img src="assets/images/iPhone7-step-one.jpg" class="ui large image">
         </div>
       </div>
 
+      <!-- Start of Step 2 section -->
       <div class="ui horizontal divider">
         Step two
       </div>
@@ -235,18 +240,29 @@
           <img src="assets/images/iPhone7-step-two.jpg" class="ui large image">
         </div>
         <div class="middle aligned column">
-          <h3 class="ui header">Start broadcasting</h3>
-          <p>When it's time to find your friends, Krewdar will send you a notification to start broadcasting. Just push start to begin broadcasting your location.</p>
+          <h3 class="ui header">Start Broadcasting</h3>
+          <p>
+            When it's time to find your friends, Krewdar will notify you to start broadcasting.
+          </p>
+          <p>
+            Set your Emoji by tapping on it, or change your message by tapping on the chat bubble. Each one
+            of your friends should use a different Emoji, as Krewdar uses it to identify nearby friends.
+          </p>
+          <p>
+            Just push start when you're ready for friends to start finding you!
+          </p>
         </div>
       </div>
 
+      <!-- Start of Step 3 section -->
       <div class="ui horizontal divider">
         Step three
       </div>
       <div class="ui two column doubling stackable grid container">
         <div class="middle aligned column">
-          <h3 class="ui header">Find your krew</h3>
-          <p>Start looking for your krew! Krewdar will display info on nearby friends, including a short message and an approximate distance.</p>
+          <h3 class="ui header">Find your Krew</h3>
+          <p>Start looking for your friends! Krewdar will display info on who's nearby,
+            including a short message and an approximate distance.</p>
         </div>
         <div class="middle aligned column">
           <img src="assets/images/iPhone7-step-three.jpg" class="ui large image">
@@ -257,21 +273,41 @@
         Ready?
       </div>
       <div class="ui center aligned container">
-			<h2>Interested in joining the beta test? <br> Submit your email below!</h2>
-	<form class="ui form" method="POST" action="http://formspree.io/krewdar@gmail.com">
-		<input type="email" name="email" placeholder="Your email" class="inputForm" style="padding: 2px; margin-top: 20px">
-		<button type="submit" class="ui button" style="margin-top: 25px; padding: 6px">Join!</button>
-	</form>
+			  <h2>Interested in joining the beta test? <br> Submit your email below!</h2>
+      	<form class="ui form" method="POST" action="http://formspree.io/krewdar@gmail.com">
+      		<input type="email" name="email" placeholder="Your email" class="inputForm" style="padding: 2px; margin-top: 20px">
+      		<button type="submit" class="ui button" style="margin-top: 25px; padding: 6px">Join!</button>
+      	</form>
       </div>
 
+    <!-- Start of FAQ section -->
     <div class="ui horizontal divider" id="faqsection">
 	      FAQ
     </div>
-    <div class="ui center aligned container">
-	<body>
-		<h2>Q: How does Krewdar work without cell service or internet?</h2>
-		A: Krewdar takes advantage of Bluetooth Low Energy, allowing friends to see when they're nearby to each other by broadcasting small packets of data.
-	</body>
+
+    <div class="ui raised very padded text container segment">
+      <h2>How does Krewdar work without cellular service or internet?</h2>
+      <p>
+        Krewdar takes advantage of Bluetooth Low Energy, allowing friends to see when they're close to each other
+        by broadcasting and scanning for small packets of data. This data is just an arbitrary identifier that is
+        generated when one person creates an Event.
+      </p>
+    </div>
+
+    <div class="ui raised very padded text container segment">
+      <h2>What does the distance text on the Nearby tab mean?</h2>
+      <p>
+        <i>"Immediate"</i> is displayed when your friend is really close by, followed by <i>"Near"</i> then
+        <i>"Far"</i>. You might see <i>"???"</i> when your friend is extremely far away, or when the Bluetooth signal is weak.
+      </p>
+    </div>
+
+    <div class="ui raised very padded text container segment">
+      <h2>Why can't I set my own messages?</h2>
+      <p>
+        Keeping the data as small as possible means more reliable detection of the Bluetooth signals, which means you'll
+        be able to find you're friends more often. With that in mind, we plan on expanding the pre-set messages available.
+      </p>
     </div>
 
     </div>
